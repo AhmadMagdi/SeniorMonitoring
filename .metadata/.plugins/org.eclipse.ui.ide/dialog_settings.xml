@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="org.eclipse.cdt.gdb:8.8.1.201602051005"/>
+		<item value="org.eclipse.cdt:8.8.1.201602051005"/>
+		<item value="org.eclipse.emf.common:2.11.1.v20160208-0816"/>
+		<item value="org.eclipse.emf.ecore:2.11.2.v20160208-0816"/>
+		<item value="org.eclipse.help:2.1.2.v20160212-1500"/>
+		<item value="org.eclipse.platform:4.5.2.v20160212-1500"/>
+		<item value="org.eclipse.rcp:4.5.2.v20160212-1500"/>
+		<item value="org.tizen.common.feature:2.0.0.201704102118"/>
+		<item value="org.tizen.dynamicanalysis.ide.eplugin.feature:2.1.0.201612231646"/>
+		<item value="org.tizen.dynamicanalysis.ide.web.eplugin.feature:2.1.0.201612222107"/>
+		<item value="org.tizen.efluibuilder.feature:1.0.0.201612261617"/>
+		<item value="org.tizen.nativeappcommon.feature:2.0.0.201611221524"/>
+		<item value="org.tizen.nativecommon.feature:2.0.0.201612201458"/>
+		<item value="org.tizen.profiler.feature:1.0.0.201612271730"/>
+		<item value="org.tizen.unittest.feature:2.0.0.201611251330"/>
+	</list>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="389" key="DIALOG_X_ORIGIN"/>
+		<item value="190" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

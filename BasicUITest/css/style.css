@@ -1,0 +1,120 @@
+body {
+  background: #333;
+  color: #fff;
+  font-family: 'Archivo Black', sans-serif;
+  margin-top: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+input {
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    background-color: #e8eeef;
+    color:#8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  margin: 1em 0 0.5em 0;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: 'Orienta', sans-serif;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px;
+    border-radius: 8px;
+}
+
+.heart {
+  background-image: url("../images/heart.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  top: 10px;
+  font-size: 0.5em;
+  padding: 35px;
+  text-align: center;
+}
+
+#about {
+  display: inline;
+  margin-top: 40px;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 10px auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .select {
+    margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  text-align:center;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin input[type="mobile-no"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#ask {background-color: #f44336;}
+#gps {background-color: #008CBA;}

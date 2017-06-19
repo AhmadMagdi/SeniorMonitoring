@@ -1,0 +1,6 @@
+17:17:04 **** Incremental Build of configuration Debug for project BasicUItst ****
+ninja all 
+ninja: no work to do.
+
+17:17:12 Build Finished (took 7s.413ms)
+

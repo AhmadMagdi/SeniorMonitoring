@@ -1,0 +1,1283 @@
+!SESSION 2017-06-14 12:15:55.632 -----------------------------------------------
+eclipse.buildId=1.2 
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\Users\أهداء\workspace\.metadata\.bak_0.log
+Created Time: 2017-06-14 12:27:33.239
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-06-14 12:27:33.245
+!MESSAGE Exception occurred while rendering: org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl@3727f0ee (elementId: org.eclipse.e4.ui.compatibility.editor, tags: [Editor, org.tizen.web.editor.javascript.JavascriptEditor, removeOnHide], contributorURI: null) (widget: null, renderer: org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer@34f60be9, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (contributionURI: bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor, object: null, context: PartImpl (org.eclipse.e4.ui.compatibility.editor) Context, variables: [], label: pedo.js, iconURI: platform:/plugin/org.tizen.web.editor.javascript/icons/javascript_file.png, tooltip: null, dirty: false, closeable: true, description: null)
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:485)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.checkParent(Widget.java:293)
+	at org.eclipse.swt.widgets.Widget.<init>(Widget.java:158)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:114)
+	at org.eclipse.swt.widgets.Scrollable.<init>(Scrollable.java:81)
+	at org.eclipse.swt.widgets.Composite.<init>(Composite.java:96)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$2.<init>(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.createElement(PartServiceImpl.java:1209)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1170)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:400)
+	at org.eclipse.ui.internal.EditorReference.getEditor(EditorReference.java:289)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2237)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1$1.visit(Activator.java:106)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:63)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:47)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1.resourceChanged(Activator.java:97)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2225)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:437)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:130)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.buildForLaunch(ZimLaunchDelegate.java:439)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.rds.RdsDeployer 4 0 2017-06-14 12:42:13.347
+!MESSAGE [2017.06.14 12:42:13][ERROR] RdsDeployer.java(291) - Cannot partially upload or reinstall
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: [RDS] Cannot install application
+	at org.tizen.common.rds.RdsDeployer.newCoreException(RdsDeployer.java:720)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:655)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	... 11 more
+!SUBENTRY 1 org.tizen.common 4 0 2017-06-14 12:42:13.347
+!MESSAGE [RDS] Cannot install application
+!STACK 0
+org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.rds.RdsDeployer 4 0 2017-06-14 12:42:38.799
+!MESSAGE [2017.06.14 12:42:38][ERROR] RdsDeployer.java(291) - Cannot partially upload or reinstall
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: [RDS] Cannot install application
+	at org.tizen.common.rds.RdsDeployer.newCoreException(RdsDeployer.java:720)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:655)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	... 11 more
+!SUBENTRY 1 org.tizen.common 4 0 2017-06-14 12:42:38.799
+!MESSAGE [RDS] Cannot install application
+!STACK 0
+org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.connection.toolbar.EmulatorLaunchWorker 4 0 2017-06-14 12:53:39.837
+!MESSAGE [2017.06.14 12:53:39][ERROR] EmulatorLaunchWorker.java(98) - Timeout occurred to get (emulator-26101) booting done msg: closed
+
+
+!ENTRY org.tizen.common.connection.toolbar.EmulatorLaunchWorker 4 0 2017-06-14 13:08:27.374
+!MESSAGE [2017.06.14 13:08:27][ERROR] EmulatorLaunchWorker.java(98) - Timeout occurred to get (emulator-26101) booting done msg: closed
+
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-06-14 13:08:27.420
+!MESSAGE [2017.06.14 13:08:27][ERROR] TargetToolBarManager.java(210) - Failed to get platform capability
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformCapability.loadPlatformCapability(PlatformCapability.java:155)
+	at org.tizen.sdblib.PlatformCapability.<init>(PlatformCapability.java:151)
+	at org.tizen.sdblib.Device.getPlatformCapability(Device.java:823)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.updateDeviceDescriptor(TargetToolBarManager.java:205)
+	at org.tizen.common.connection.toolbar.ToolbarContributor.targetsChanged(ToolbarContributor.java:160)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.fireLaunchTargetsChanged(TargetToolBarManager.java:107)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.onConnected(TargetToolBarManager.java:249)
+	at org.tizen.sdblib.SmartDevelopmentBridge.deviceConnected(SmartDevelopmentBridge.java:553)
+	at org.tizen.sdblib.DeviceMonitor.updateDevices(DeviceMonitor.java:342)
+	at org.tizen.sdblib.DeviceMonitor.processIncomingDeviceData(DeviceMonitor.java:241)
+	at org.tizen.sdblib.DeviceMonitor.process(DeviceMonitor.java:426)
+	at org.tizen.sdblib.daemon.AbstractServer.run(AbstractServer.java:242)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.tizen.common.util.SdbCommandUtil 4 0 2017-06-14 13:08:27.690
+!MESSAGE [2017.06.14 13:08:27][ERROR] SdbCommandUtil.java(103) - Cannot check whether a device supports multiuser or not. emulator-26101
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformCapability.loadPlatformCapability(PlatformCapability.java:155)
+	at org.tizen.sdblib.PlatformCapability.<init>(PlatformCapability.java:151)
+	at org.tizen.sdblib.Device.getPlatformCapability(Device.java:823)
+	at org.tizen.common.util.SdbCommandUtil.isMultiUserDevice(SdbCommandUtil.java:95)
+	at org.tizen.common.connection.debugtools.OnDemandInstall.<init>(OnDemandInstall.java:91)
+	at org.tizen.common.connection.explorer.ConnectionExplorerPanel.onConnected(ConnectionExplorerPanel.java:1198)
+	at org.tizen.sdblib.SmartDevelopmentBridge.deviceConnected(SmartDevelopmentBridge.java:553)
+	at org.tizen.sdblib.DeviceMonitor.updateDevices(DeviceMonitor.java:342)
+	at org.tizen.sdblib.DeviceMonitor.processIncomingDeviceData(DeviceMonitor.java:241)
+	at org.tizen.sdblib.DeviceMonitor.process(DeviceMonitor.java:426)
+	at org.tizen.sdblib.daemon.AbstractServer.run(AbstractServer.java:242)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.tizen.web.zimlaunch 4 0 2017-06-14 13:08:37.588
+!MESSAGE Installing the package... > Fail
+!STACK 0
+org.tizen.web.zimlaunch.exception.TizenWebIDEException: Unexpected error occurred at the below step.
+ `Installing the package...`
+Please try again later.
+	at org.tizen.web.zimlaunch.step.InstallStep.executeStep(InstallStep.java:144)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-06-14 13:15:41.675
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.tizen.common.ui.statusbar.UpdateNotificationControl$2
+!SESSION 2017-06-15 12:06:53.837 -----------------------------------------------
+eclipse.buildId=1.2 
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-15 12:07:15.936
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\أهداء'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.tizen.common.ui.Startup 1 0 2017-06-15 12:07:16.574
+!MESSAGE SDK Information: Path [C:\tizen-studio], Data Path [C:\tizen-studio-data], Platform Path [C:\tizen-studio\platforms\tizen-3.0\wearable]
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 2 2017-06-15 12:08:45.340
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench.swt".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:485)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.checkParent(Widget.java:293)
+	at org.eclipse.swt.widgets.Widget.<init>(Widget.java:158)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:114)
+	at org.eclipse.swt.widgets.Scrollable.<init>(Scrollable.java:81)
+	at org.eclipse.swt.widgets.Composite.<init>(Composite.java:96)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$2.<init>(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.createElement(PartServiceImpl.java:1209)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1170)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:400)
+	at org.eclipse.ui.internal.EditorReference.getEditor(EditorReference.java:289)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2237)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1$1.visit(Activator.java:106)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:63)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:47)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1.resourceChanged(Activator.java:97)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2225)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:437)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:130)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.buildForLaunch(ZimLaunchDelegate.java:439)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-06-15 12:08:45.349
+!MESSAGE Exception occurred while rendering: org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl@51c959a4 (elementId: org.eclipse.e4.ui.compatibility.editor, tags: [Editor, org.tizen.web.editor.javascript.JavascriptEditor, removeOnHide], contributorURI: null) (widget: null, renderer: org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer@c89e263, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (contributionURI: bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor, object: null, context: PartImpl (org.eclipse.e4.ui.compatibility.editor) Context, variables: [], label: pedo.js, iconURI: platform:/plugin/org.tizen.web.editor.javascript/icons/javascript_file.png, tooltip: null, dirty: false, closeable: true, description: null)
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:485)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.checkParent(Widget.java:293)
+	at org.eclipse.swt.widgets.Widget.<init>(Widget.java:158)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:114)
+	at org.eclipse.swt.widgets.Scrollable.<init>(Scrollable.java:81)
+	at org.eclipse.swt.widgets.Composite.<init>(Composite.java:96)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$2.<init>(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.createElement(PartServiceImpl.java:1209)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1170)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:400)
+	at org.eclipse.ui.internal.EditorReference.getEditor(EditorReference.java:289)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2237)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1$1.visit(Activator.java:106)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:63)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:47)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1.resourceChanged(Activator.java:97)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2225)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:437)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:130)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.buildForLaunch(ZimLaunchDelegate.java:439)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-06-15 14:33:44.505
+!MESSAGE An internal error occurred during: "Compute launch button tooltip".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.core.internal.resources.File cannot be cast to org.eclipse.core.resources.IProject
+	at org.tizen.dynamicanalysis.ide.web.eplugin.WebWidgetProjectTester.test(WebWidgetProjectTester.java:12)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:106)
+	at org.eclipse.core.internal.expressions.NotExpression.evaluate(NotExpression.java:36)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:160)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:55)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:281)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:455)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:240)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:142)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-06-15 14:36:47.620
+!MESSAGE An internal error occurred during: "Compute launch button tooltip".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.core.internal.resources.File cannot be cast to org.eclipse.core.resources.IProject
+	at org.tizen.dynamicanalysis.ide.web.eplugin.WebWidgetProjectTester.test(WebWidgetProjectTester.java:12)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:106)
+	at org.eclipse.core.internal.expressions.NotExpression.evaluate(NotExpression.java:36)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:160)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:55)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:281)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:455)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:240)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:142)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.connection.toolbar.EmulatorLaunchWorker 4 0 2017-06-15 15:17:15.990
+!MESSAGE [2017.06.15 15:17:15][ERROR] EmulatorLaunchWorker.java(98) - Timeout occurred to get (emulator-26101) booting done msg: closed
+
+
+!ENTRY org.tizen.common.connection.toolbar.EmulatorLaunchWorker 4 0 2017-06-16 14:19:38.863
+!MESSAGE [2017.06.16 14:19:38][ERROR] EmulatorLaunchWorker.java(93) - Emulator has been booted up: W-3.0-circle-x86
+
+
+!ENTRY org.tizen.common.rds.RdsDeployer 4 0 2017-06-16 14:30:02.617
+!MESSAGE [2017.06.16 14:30:02][ERROR] RdsDeployer.java(291) - Cannot partially upload or reinstall
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: [RDS] Cannot install application
+	at org.tizen.common.rds.RdsDeployer.newCoreException(RdsDeployer.java:720)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:655)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	... 11 more
+!SUBENTRY 1 org.tizen.common 4 0 2017-06-16 14:30:02.630
+!MESSAGE [RDS] Cannot install application
+!STACK 0
+org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.rds.RdsDeployer 4 0 2017-06-16 14:31:24.293
+!MESSAGE [2017.06.16 14:31:24][ERROR] RdsDeployer.java(291) - Cannot partially upload or reinstall
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: [RDS] Cannot install application
+	at org.tizen.common.rds.RdsDeployer.newCoreException(RdsDeployer.java:720)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:655)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	... 11 more
+!SUBENTRY 1 org.tizen.common 4 0 2017-06-16 14:31:24.293
+!MESSAGE [RDS] Cannot install application
+!STACK 0
+org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.connection.toolbar.EmulatorLaunchWorker 4 0 2017-06-16 14:33:01.083
+!MESSAGE [2017.06.16 14:33:01][ERROR] EmulatorLaunchWorker.java(98) - Timeout occurred to get (emulator-26101) booting done msg: closed
+
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-06-16 14:33:01.104
+!MESSAGE [2017.06.16 14:33:01][ERROR] TargetToolBarManager.java(210) - Failed to get platform capability
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformCapability.loadPlatformCapability(PlatformCapability.java:155)
+	at org.tizen.sdblib.PlatformCapability.<init>(PlatformCapability.java:151)
+	at org.tizen.sdblib.Device.getPlatformCapability(Device.java:823)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.updateDeviceDescriptor(TargetToolBarManager.java:205)
+	at org.tizen.common.connection.toolbar.ToolbarContributor.targetsChanged(ToolbarContributor.java:160)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.fireLaunchTargetsChanged(TargetToolBarManager.java:107)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.onConnected(TargetToolBarManager.java:249)
+	at org.tizen.sdblib.SmartDevelopmentBridge.deviceConnected(SmartDevelopmentBridge.java:553)
+	at org.tizen.sdblib.DeviceMonitor.updateDevices(DeviceMonitor.java:342)
+	at org.tizen.sdblib.DeviceMonitor.processIncomingDeviceData(DeviceMonitor.java:241)
+	at org.tizen.sdblib.DeviceMonitor.process(DeviceMonitor.java:426)
+	at org.tizen.sdblib.daemon.AbstractServer.run(AbstractServer.java:242)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.tizen.common.util.SdbCommandUtil 4 0 2017-06-16 14:33:01.392
+!MESSAGE [2017.06.16 14:33:01][ERROR] SdbCommandUtil.java(103) - Cannot check whether a device supports multiuser or not. emulator-26101
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformCapability.loadPlatformCapability(PlatformCapability.java:155)
+	at org.tizen.sdblib.PlatformCapability.<init>(PlatformCapability.java:151)
+	at org.tizen.sdblib.Device.getPlatformCapability(Device.java:823)
+	at org.tizen.common.util.SdbCommandUtil.isMultiUserDevice(SdbCommandUtil.java:95)
+	at org.tizen.common.connection.debugtools.OnDemandInstall.<init>(OnDemandInstall.java:91)
+	at org.tizen.common.connection.explorer.ConnectionExplorerPanel.onConnected(ConnectionExplorerPanel.java:1198)
+	at org.tizen.sdblib.SmartDevelopmentBridge.deviceConnected(SmartDevelopmentBridge.java:553)
+	at org.tizen.sdblib.DeviceMonitor.updateDevices(DeviceMonitor.java:342)
+	at org.tizen.sdblib.DeviceMonitor.processIncomingDeviceData(DeviceMonitor.java:241)
+	at org.tizen.sdblib.DeviceMonitor.process(DeviceMonitor.java:426)
+	at org.tizen.sdblib.daemon.AbstractServer.run(AbstractServer.java:242)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.tizen.common.connection.toolbar.EmulatorLaunchWorker 4 0 2017-06-16 14:34:51.737
+!MESSAGE [2017.06.16 14:34:51][ERROR] EmulatorLaunchWorker.java(98) - Timeout occurred to get (emulator-26101) booting done msg: closed
+
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-06-16 14:34:51.756
+!MESSAGE [2017.06.16 14:34:51][ERROR] TargetToolBarManager.java(210) - Failed to get platform capability
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformCapability.loadPlatformCapability(PlatformCapability.java:155)
+	at org.tizen.sdblib.PlatformCapability.<init>(PlatformCapability.java:151)
+	at org.tizen.sdblib.Device.getPlatformCapability(Device.java:823)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.updateDeviceDescriptor(TargetToolBarManager.java:205)
+	at org.tizen.common.connection.toolbar.ToolbarContributor.targetsChanged(ToolbarContributor.java:160)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.fireLaunchTargetsChanged(TargetToolBarManager.java:107)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.onConnected(TargetToolBarManager.java:249)
+	at org.tizen.sdblib.SmartDevelopmentBridge.deviceConnected(SmartDevelopmentBridge.java:553)
+	at org.tizen.sdblib.DeviceMonitor.updateDevices(DeviceMonitor.java:342)
+	at org.tizen.sdblib.DeviceMonitor.processIncomingDeviceData(DeviceMonitor.java:241)
+	at org.tizen.sdblib.DeviceMonitor.process(DeviceMonitor.java:426)
+	at org.tizen.sdblib.daemon.AbstractServer.run(AbstractServer.java:242)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.tizen.common.util.SdbCommandUtil 4 0 2017-06-16 14:34:52.055
+!MESSAGE [2017.06.16 14:34:52][ERROR] SdbCommandUtil.java(103) - Cannot check whether a device supports multiuser or not. emulator-26101
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformCapability.loadPlatformCapability(PlatformCapability.java:155)
+	at org.tizen.sdblib.PlatformCapability.<init>(PlatformCapability.java:151)
+	at org.tizen.sdblib.Device.getPlatformCapability(Device.java:823)
+	at org.tizen.common.util.SdbCommandUtil.isMultiUserDevice(SdbCommandUtil.java:95)
+	at org.tizen.common.connection.debugtools.OnDemandInstall.<init>(OnDemandInstall.java:91)
+	at org.tizen.common.connection.explorer.ConnectionExplorerPanel.onConnected(ConnectionExplorerPanel.java:1198)
+	at org.tizen.sdblib.SmartDevelopmentBridge.deviceConnected(SmartDevelopmentBridge.java:553)
+	at org.tizen.sdblib.DeviceMonitor.updateDevices(DeviceMonitor.java:342)
+	at org.tizen.sdblib.DeviceMonitor.processIncomingDeviceData(DeviceMonitor.java:241)
+	at org.tizen.sdblib.DeviceMonitor.process(DeviceMonitor.java:426)
+	at org.tizen.sdblib.daemon.AbstractServer.run(AbstractServer.java:242)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.tizen.web.zimlaunch.step.InstallStep 4 0 2017-06-16 14:36:25.370
+!MESSAGE [2017.06.16 14:36:25][ERROR] InstallStep.java(142) - Return Code:35)sdb command error exception
+
+
+!ENTRY org.tizen.web.zimlaunch 4 0 2017-06-16 14:36:25.438
+!MESSAGE Installing the package... > Fail
+!STACK 0
+org.tizen.web.zimlaunch.exception.TizenWebIDEException: Unexpected error occurred at the below step.
+ `Installing the package...`
+Please try again later.
+	at org.tizen.web.zimlaunch.step.InstallStep.executeStep(InstallStep.java:144)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.core.application.ProfileInfo 4 0 2017-06-16 15:19:13.982
+!MESSAGE [2017.06.16 15:19:13][ERROR] ProfileInfo.java(408) - Failed to get a device information from '192.168.1.8:26101' (null) 
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformInfo.<init>(PlatformInfo.java:60)
+	at org.tizen.sdblib.Device.getPlatformInfo(Device.java:816)
+	at org.tizen.common.core.application.ProfileInfo.getProfileInfo(ProfileInfo.java:391)
+	at org.tizen.common.util.LaunchUtil.checkProfile(LaunchUtil.java:157)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.preLaunchCheck(ZimLaunchDelegate.java:130)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.web.zimlaunch 4 0 2017-06-16 15:19:28.094
+!MESSAGE 
+!STACK 0
+org.tizen.web.zimlaunch.exception.NoConnectedDeviceException
+	at org.tizen.web.zimlaunch.util.ConnectionUtil.getSelectedDevice(ConnectionUtil.java:80)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:257)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.rds.RdsDeployer 4 0 2017-06-16 15:21:00.834
+!MESSAGE [2017.06.16 15:21:00][ERROR] RdsDeployer.java(291) - Cannot partially upload or reinstall
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: [RDS] Cannot install application
+	at org.tizen.common.rds.RdsDeployer.newCoreException(RdsDeployer.java:720)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:655)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	... 11 more
+!SUBENTRY 1 org.tizen.common 4 0 2017-06-16 15:21:00.834
+!MESSAGE [RDS] Cannot install application
+!STACK 0
+org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui.console 4 120 2017-06-16 15:23:31.608
+!MESSAGE Error logged from Console plug-in: 
+!STACK 0
+java.io.IOException: Document is closed
+	at org.eclipse.ui.internal.console.IOConsolePartitioner.streamAppended(IOConsolePartitioner.java:464)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:247)
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:242)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:226)
+	at org.eclipse.ui.console.MessageConsoleStream.print(MessageConsoleStream.java:56)
+	at org.tizen.common.ui.view.console.ConsoleManager2.print(ConsoleManager2.java:318)
+	at org.tizen.common.ui.view.console.ConsoleManager2.println(ConsoleManager2.java:344)
+	at org.tizen.web.zimlaunch.util.jsconsole.JsLogReceiver.printJsLog(JsLogReceiver.java:240)
+	at org.tizen.web.zimlaunch.util.jsconsole.JsLogReceiver.processNewLines(JsLogReceiver.java:108)
+	at org.tizen.sdblib.receiver.MultiLineReceiver.flush(MultiLineReceiver.java:202)
+	at org.tizen.sdblib.receiver.MultiLineReceiver.append(MultiLineReceiver.java:185)
+	at org.tizen.sdblib.receiver.AbstractShellOutputReceiver.append(AbstractShellOutputReceiver.java:59)
+	at org.tizen.sdblib.command.Command.in(Command.java:189)
+	at org.tizen.sdblib.command.Command.in(Command.java:123)
+	at org.tizen.sdblib.Device.executeShellCommand(Device.java:528)
+	at org.tizen.web.zimlaunch.util.jsconsole.JSLogThread.run(JSLogThread.java:58)
+
+!ENTRY org.eclipse.ui.console 4 120 2017-06-16 15:23:31.875
+!MESSAGE Error logged from Console plug-in: 
+!STACK 0
+java.io.IOException: Document is closed
+	at org.eclipse.ui.internal.console.IOConsolePartitioner.streamAppended(IOConsolePartitioner.java:464)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:247)
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:242)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:226)
+	at org.eclipse.ui.console.MessageConsoleStream.print(MessageConsoleStream.java:56)
+	at org.tizen.common.ui.view.console.ConsoleManager2.print(ConsoleManager2.java:318)
+	at org.tizen.common.ui.view.console.ConsoleManager2.println(ConsoleManager2.java:344)
+	at org.tizen.web.zimlaunch.util.jsconsole.JsLogReceiver.printJsLog(JsLogReceiver.java:240)
+	at org.tizen.web.zimlaunch.util.jsconsole.JsLogReceiver.processNewLines(JsLogReceiver.java:108)
+	at org.tizen.sdblib.receiver.MultiLineReceiver.flush(MultiLineReceiver.java:202)
+	at org.tizen.sdblib.receiver.MultiLineReceiver.append(MultiLineReceiver.java:185)
+	at org.tizen.sdblib.receiver.AbstractShellOutputReceiver.append(AbstractShellOutputReceiver.java:59)
+	at org.tizen.sdblib.command.Command.in(Command.java:189)
+	at org.tizen.sdblib.command.Command.in(Command.java:123)
+	at org.tizen.sdblib.Device.executeShellCommand(Device.java:528)
+	at org.tizen.web.zimlaunch.util.jsconsole.JSLogThread.run(JSLogThread.java:58)
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-06-16 16:12:41.255
+!MESSAGE [2017.06.16 16:12:41][ERROR] TargetToolBarManager.java(384) - Failed to get VM property
+
+
+!ENTRY org.tizen.common.rds.RdsDeployer 4 0 2017-06-16 16:15:25.857
+!MESSAGE [2017.06.16 16:15:25][ERROR] RdsDeployer.java(291) - Cannot partially upload or reinstall
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: [RDS] Cannot install application
+	at org.tizen.common.rds.RdsDeployer.newCoreException(RdsDeployer.java:720)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:655)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	... 11 more
+!SUBENTRY 1 org.tizen.common 4 0 2017-06-16 16:15:25.857
+!MESSAGE [RDS] Cannot install application
+!STACK 0
+org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-06-16 23:41:12.171 -----------------------------------------------
+eclipse.buildId=1.2 
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-06-16 23:41:21.457
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-16 23:41:59.047
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\أهداء'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.tizen.common.ui.Startup 1 0 2017-06-16 23:41:59.998
+!MESSAGE SDK Information: Path [C:\tizen-studio], Data Path [C:\tizen-studio-data], Platform Path [C:\tizen-studio\platforms\tizen-3.0\wearable]
+
+!ENTRY org.eclipse.ui 4 0 2017-06-17 17:03:19.628
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Graphic is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.graphics.Image.getBounds(Image.java:1346)
+	at org.eclipse.swt.widgets.Label.wmDrawChild(Label.java:656)
+	at org.eclipse.swt.widgets.Control.WM_DRAWITEM(Control.java:4868)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4697)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(OS.java:2443)
+	at org.eclipse.swt.widgets.Label.callWindowProc(Label.java:117)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4781)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5063)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction.run(WizardShortcutAction.java:99)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:600)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:516)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:425)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1116)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-06-17 17:04:35.460
+!MESSAGE Indexed 'BasicUItst' (1 sources, 381 headers) in 13.3 sec: 22,237 declarations; 27,254 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.tizen.common.connection.toolbar.EmulatorLaunchWorker 4 0 2017-06-17 17:08:09.655
+!MESSAGE [2017.06.17 17:08:09][ERROR] EmulatorLaunchWorker.java(98) - Timeout occurred to get (emulator-26101) booting done msg: closed
+
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-06-17 17:08:09.708
+!MESSAGE [2017.06.17 17:08:09][ERROR] TargetToolBarManager.java(210) - Failed to get platform capability
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformCapability.loadPlatformCapability(PlatformCapability.java:155)
+	at org.tizen.sdblib.PlatformCapability.<init>(PlatformCapability.java:151)
+	at org.tizen.sdblib.Device.getPlatformCapability(Device.java:823)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.updateDeviceDescriptor(TargetToolBarManager.java:205)
+	at org.tizen.common.connection.toolbar.ToolbarContributor.targetsChanged(ToolbarContributor.java:160)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.fireLaunchTargetsChanged(TargetToolBarManager.java:107)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.onConnected(TargetToolBarManager.java:249)
+	at org.tizen.sdblib.SmartDevelopmentBridge.deviceConnected(SmartDevelopmentBridge.java:553)
+	at org.tizen.sdblib.DeviceMonitor.updateDevices(DeviceMonitor.java:342)
+	at org.tizen.sdblib.DeviceMonitor.processIncomingDeviceData(DeviceMonitor.java:241)
+	at org.tizen.sdblib.DeviceMonitor.process(DeviceMonitor.java:426)
+	at org.tizen.sdblib.daemon.AbstractServer.run(AbstractServer.java:242)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.tizen.common.util.SdbCommandUtil 4 0 2017-06-17 17:08:10.149
+!MESSAGE [2017.06.17 17:08:10][ERROR] SdbCommandUtil.java(103) - Cannot check whether a device supports multiuser or not. emulator-26101
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformCapability.loadPlatformCapability(PlatformCapability.java:155)
+	at org.tizen.sdblib.PlatformCapability.<init>(PlatformCapability.java:151)
+	at org.tizen.sdblib.Device.getPlatformCapability(Device.java:823)
+	at org.tizen.common.util.SdbCommandUtil.isMultiUserDevice(SdbCommandUtil.java:95)
+	at org.tizen.common.connection.debugtools.OnDemandInstall.<init>(OnDemandInstall.java:91)
+	at org.tizen.common.connection.explorer.ConnectionExplorerPanel.onConnected(ConnectionExplorerPanel.java:1198)
+	at org.tizen.sdblib.SmartDevelopmentBridge.deviceConnected(SmartDevelopmentBridge.java:553)
+	at org.tizen.sdblib.DeviceMonitor.updateDevices(DeviceMonitor.java:342)
+	at org.tizen.sdblib.DeviceMonitor.processIncomingDeviceData(DeviceMonitor.java:241)
+	at org.tizen.sdblib.DeviceMonitor.process(DeviceMonitor.java:426)
+	at org.tizen.sdblib.daemon.AbstractServer.run(AbstractServer.java:242)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.tizen.nativecommon 4 0 2017-06-17 17:08:23.889
+!MESSAGE Cannot install application.
+!STACK 0
+org.tizen.common.sdb.command.message.CommandErrorException: Unknown Error [117]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:155)
+	at org.tizen.nativecommon.launch.TizenLaunchDelegate2.installPackage(TizenLaunchDelegate2.java:1203)
+	at org.tizen.nativecommon.launch.TizenLaunchDelegate2.normalDeploy(TizenLaunchDelegate2.java:994)
+	at org.tizen.nativecommon.launch.TizenLaunchDelegate2.deployApplication(TizenLaunchDelegate2.java:930)
+	at org.tizen.nativecommon.launch.TizenLaunchDelegate2.launchApplicationForRun(TizenLaunchDelegate2.java:617)
+	at org.tizen.nativecommon.launch.TizenLaunchDelegate2.launch(TizenLaunchDelegate2.java:264)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.nativecommon 4 0 2017-06-17 17:09:04.761
+!MESSAGE Cannot install application.
+!STACK 0
+org.tizen.common.sdb.command.message.CommandErrorException: Unknown Error [117]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:155)
+	at org.tizen.nativecommon.launch.TizenLaunchDelegate2.installPackage(TizenLaunchDelegate2.java:1203)
+	at org.tizen.nativecommon.launch.TizenLaunchDelegate2.normalDeploy(TizenLaunchDelegate2.java:994)
+	at org.tizen.nativecommon.launch.TizenLaunchDelegate2.deployApplication(TizenLaunchDelegate2.java:930)
+	at org.tizen.nativecommon.launch.TizenLaunchDelegate2.launchApplicationForRun(TizenLaunchDelegate2.java:617)
+	at org.tizen.nativecommon.launch.TizenLaunchDelegate2.launch(TizenLaunchDelegate2.java:264)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.rds.RdsDeployer 4 0 2017-06-18 18:49:46.931
+!MESSAGE [2017.06.18 18:49:46][ERROR] RdsDeployer.java(291) - Cannot partially upload or reinstall
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: [RDS] Cannot install application
+	at org.tizen.common.rds.RdsDeployer.newCoreException(RdsDeployer.java:720)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:655)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	... 11 more
+!SUBENTRY 1 org.tizen.common 4 0 2017-06-18 18:49:46.932
+!MESSAGE [RDS] Cannot install application
+!STACK 0
+org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-06-18 19:16:24.926
+!MESSAGE [2017.06.18 19:16:24][ERROR] TargetToolBarManager.java(384) - Failed to get VM property
+
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-06-18 19:21:34.078
+!MESSAGE [2017.06.18 19:21:34][ERROR] TargetToolBarManager.java(384) - Failed to get VM property
+
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-06-18 19:22:20.177
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.tizen.common.ui.statusbar.UpdateNotificationControl$2
+!SESSION 2017-06-18 19:22:24.457 -----------------------------------------------
+eclipse.buildId=1.2 
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-18 19:23:11.779
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\أهداء'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.tizen.common.ui.Startup 1 0 2017-06-18 19:23:12.906
+!MESSAGE SDK Information: Path [C:\tizen-studio], Data Path [C:\tizen-studio-data], Platform Path [C:\tizen-studio\platforms\tizen-3.0\wearable]
+
+!ENTRY org.tizen.common.connection.toolbar.EmulatorLaunchWorker 4 0 2017-06-18 19:24:19.963
+!MESSAGE [2017.06.18 19:24:19][ERROR] EmulatorLaunchWorker.java(93) - Emulator has been booted up: W-3.0-circle-x86
+
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 2 2017-06-18 19:24:30.639
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench.swt".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:485)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.checkParent(Widget.java:293)
+	at org.eclipse.swt.widgets.Widget.<init>(Widget.java:158)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:114)
+	at org.eclipse.swt.widgets.Scrollable.<init>(Scrollable.java:81)
+	at org.eclipse.swt.widgets.Composite.<init>(Composite.java:96)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$2.<init>(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.createElement(PartServiceImpl.java:1209)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1170)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:400)
+	at org.eclipse.ui.internal.EditorReference.getEditor(EditorReference.java:289)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2237)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1$1.visit(Activator.java:106)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:63)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:47)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1.resourceChanged(Activator.java:97)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2225)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:437)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:130)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.buildForLaunch(ZimLaunchDelegate.java:439)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-06-18 19:24:30.648
+!MESSAGE Exception occurred while rendering: org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl@2b10ace9 (elementId: org.eclipse.e4.ui.compatibility.editor, tags: [Editor, org.tizen.web.editor.javascript.JavascriptEditor, removeOnHide], contributorURI: null) (widget: null, renderer: org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer@5b4d9bda, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (contributionURI: bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor, object: null, context: PartImpl (org.eclipse.e4.ui.compatibility.editor) Context, variables: [], label: app.js, iconURI: platform:/plugin/org.tizen.web.editor.javascript/icons/javascript_file.png, tooltip: null, dirty: false, closeable: true, description: null)
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:485)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.checkParent(Widget.java:293)
+	at org.eclipse.swt.widgets.Widget.<init>(Widget.java:158)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:114)
+	at org.eclipse.swt.widgets.Scrollable.<init>(Scrollable.java:81)
+	at org.eclipse.swt.widgets.Composite.<init>(Composite.java:96)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$2.<init>(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.createElement(PartServiceImpl.java:1209)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1170)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:400)
+	at org.eclipse.ui.internal.EditorReference.getEditor(EditorReference.java:289)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2237)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1$1.visit(Activator.java:106)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:63)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:47)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1.resourceChanged(Activator.java:97)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2225)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:437)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:130)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.buildForLaunch(ZimLaunchDelegate.java:439)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.rds.RdsDeployer 4 0 2017-06-18 20:44:57.646
+!MESSAGE [2017.06.18 20:44:57][ERROR] RdsDeployer.java(291) - Cannot partially upload or reinstall
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: [RDS] Cannot install application
+	at org.tizen.common.rds.RdsDeployer.newCoreException(RdsDeployer.java:720)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:655)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	... 11 more
+!SUBENTRY 1 org.tizen.common 4 0 2017-06-18 20:44:57.647
+!MESSAGE [RDS] Cannot install application
+!STACK 0
+org.tizen.common.sdb.command.message.CommandErrorException: Application directory error [-16]
+	at org.tizen.common.sdb.command.message.PkgcmdErrorType.makeException(PkgcmdErrorType.java:135)
+	at org.tizen.common.sdb.command.SdbCommand.runCommand(SdbCommand.java:174)
+	at org.tizen.common.rds.RdsDeployer.postInstall(RdsDeployer.java:650)
+	at org.tizen.common.rds.RdsDeployer.partialZipInstall(RdsDeployer.java:587)
+	at org.tizen.common.rds.RdsDeployer.deploy(RdsDeployer.java:289)
+	at org.tizen.web.zimlaunch.step.RdsStep.runRds(RdsStep.java:235)
+	at org.tizen.web.zimlaunch.step.RdsStep.executeStep(RdsStep.java:141)
+	at org.tizen.web.zimlaunch.core.CompositeStep.executeStep(CompositeStep.java:109)
+	at org.tizen.web.zimlaunch.deployer.ZimLaunchDelegate.launch(ZimLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 2 2017-06-18 20:46:34.479
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench.swt".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:485)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.checkParent(Widget.java:293)
+	at org.eclipse.swt.widgets.Widget.<init>(Widget.java:158)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:114)
+	at org.eclipse.swt.widgets.Scrollable.<init>(Scrollable.java:81)
+	at org.eclipse.swt.widgets.Composite.<init>(Composite.java:96)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$2.<init>(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.createElement(PartServiceImpl.java:1209)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1170)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:400)
+	at org.eclipse.ui.internal.EditorReference.getEditor(EditorReference.java:289)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2237)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1$1.visit(Activator.java:106)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:63)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:47)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1.resourceChanged(Activator.java:97)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-06-18 20:46:34.503
+!MESSAGE Exception occurred while rendering: org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl@3d37203b (elementId: org.eclipse.e4.ui.compatibility.editor, tags: [Editor, org.tizen.web.editor.javascript.JavascriptEditor, removeOnHide], contributorURI: null) (widget: null, renderer: org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer@5b4d9bda, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (contributionURI: bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor, object: null, context: PartImpl (org.eclipse.e4.ui.compatibility.editor) Context, variables: [], label: pedo.js, iconURI: platform:/plugin/org.tizen.web.editor.javascript/icons/javascript_file.png, tooltip: null, dirty: false, closeable: true, description: null)
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:485)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:373)
+	at org.eclipse.swt.widgets.Widget.checkParent(Widget.java:293)
+	at org.eclipse.swt.widgets.Widget.<init>(Widget.java:158)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:114)
+	at org.eclipse.swt.widgets.Scrollable.<init>(Scrollable.java:81)
+	at org.eclipse.swt.widgets.Composite.<init>(Composite.java:96)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer$2.<init>(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:80)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.createElement(PartServiceImpl.java:1209)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1170)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:400)
+	at org.eclipse.ui.internal.EditorReference.getEditor(EditorReference.java:289)
+	at org.eclipse.ui.internal.WorkbenchPage.findEditor(WorkbenchPage.java:2237)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1$1.visit(Activator.java:106)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:63)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:47)
+	at org.tizen.dynamicanalysis.ide.eplugin.Activator$1.resourceChanged(Activator.java:97)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-06-19 09:24:39.534
+!MESSAGE [2017.06.19 09:24:39][ERROR] TargetToolBarManager.java(210) - Failed to get platform capability
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformCapability.loadPlatformCapability(PlatformCapability.java:155)
+	at org.tizen.sdblib.PlatformCapability.<init>(PlatformCapability.java:151)
+	at org.tizen.sdblib.Device.getPlatformCapability(Device.java:823)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.updateDeviceDescriptor(TargetToolBarManager.java:205)
+	at org.tizen.common.connection.toolbar.ToolbarContributor.targetsChanged(ToolbarContributor.java:160)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.fireLaunchTargetsChanged(TargetToolBarManager.java:107)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.onConnected(TargetToolBarManager.java:249)
+	at org.tizen.sdblib.SmartDevelopmentBridge.deviceConnected(SmartDevelopmentBridge.java:553)
+	at org.tizen.sdblib.DeviceMonitor.updateDevices(DeviceMonitor.java:342)
+	at org.tizen.sdblib.DeviceMonitor.processIncomingDeviceData(DeviceMonitor.java:241)
+	at org.tizen.sdblib.DeviceMonitor.process(DeviceMonitor.java:426)
+	at org.tizen.sdblib.daemon.AbstractServer.run(AbstractServer.java:242)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.tizen.common.util.SdbCommandUtil 4 0 2017-06-19 09:24:39.916
+!MESSAGE [2017.06.19 09:24:39][ERROR] SdbCommandUtil.java(103) - Cannot check whether a device supports multiuser or not. emulator-26101
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformCapability.loadPlatformCapability(PlatformCapability.java:155)
+	at org.tizen.sdblib.PlatformCapability.<init>(PlatformCapability.java:151)
+	at org.tizen.sdblib.Device.getPlatformCapability(Device.java:823)
+	at org.tizen.common.util.SdbCommandUtil.isMultiUserDevice(SdbCommandUtil.java:95)
+	at org.tizen.common.connection.debugtools.OnDemandInstall.<init>(OnDemandInstall.java:91)
+	at org.tizen.common.connection.explorer.ConnectionExplorerPanel.onConnected(ConnectionExplorerPanel.java:1198)
+	at org.tizen.sdblib.SmartDevelopmentBridge.deviceConnected(SmartDevelopmentBridge.java:553)
+	at org.tizen.sdblib.DeviceMonitor.updateDevices(DeviceMonitor.java:342)
+	at org.tizen.sdblib.DeviceMonitor.processIncomingDeviceData(DeviceMonitor.java:241)
+	at org.tizen.sdblib.DeviceMonitor.process(DeviceMonitor.java:426)
+	at org.tizen.sdblib.daemon.AbstractServer.run(AbstractServer.java:242)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.tizen.common.connection.debugtools.OnDemandInstall 4 0 2017-06-19 09:24:42.182
+!MESSAGE [2017.06.19 09:24:42][ERROR] OnDemandInstall.java(340) - Cannot copy the file 'gdbserver_7.8.1_i386.tar'
+
+!STACK 0
+java.io.IOException: sdb Connection Error.
+error: target not found
+	at org.tizen.common.connection.debugtools.OnDemandInstall.copyPackage(OnDemandInstall.java:271)
+	at org.tizen.common.connection.debugtools.OnDemandInstall.deployPackage(OnDemandInstall.java:338)
+	at org.tizen.common.connection.debugtools.OnDemandInstall.installPackage(OnDemandInstall.java:305)
+	at org.tizen.common.connection.debugtools.OnDemandInstall.access$0(OnDemandInstall.java:278)
+	at org.tizen.common.connection.debugtools.OnDemandInstall$OnDemandRunnable.run(OnDemandInstall.java:404)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.tizen.common.connection.toolbar.TargetToolBarManager 4 0 2017-06-19 09:24:56.016
+!MESSAGE [2017.06.19 09:24:56][ERROR] TargetToolBarManager.java(210) - Failed to get platform capability
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformCapability.loadPlatformCapability(PlatformCapability.java:155)
+	at org.tizen.sdblib.PlatformCapability.<init>(PlatformCapability.java:151)
+	at org.tizen.sdblib.Device.getPlatformCapability(Device.java:823)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.updateDeviceDescriptor(TargetToolBarManager.java:205)
+	at org.tizen.common.connection.toolbar.ToolbarContributor.targetsChanged(ToolbarContributor.java:160)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.fireLaunchTargetsChanged(TargetToolBarManager.java:107)
+	at org.tizen.common.connection.toolbar.TargetToolBarManager.onConnected(TargetToolBarManager.java:249)
+	at org.tizen.sdblib.SmartDevelopmentBridge.deviceConnected(SmartDevelopmentBridge.java:553)
+	at org.tizen.sdblib.DeviceMonitor.updateDevices(DeviceMonitor.java:342)
+	at org.tizen.sdblib.DeviceMonitor.processIncomingDeviceData(DeviceMonitor.java:241)
+	at org.tizen.sdblib.DeviceMonitor.process(DeviceMonitor.java:426)
+	at org.tizen.sdblib.daemon.AbstractServer.run(AbstractServer.java:242)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.tizen.common.util.SdbCommandUtil 4 0 2017-06-19 09:24:56.320
+!MESSAGE [2017.06.19 09:24:56][ERROR] SdbCommandUtil.java(103) - Cannot check whether a device supports multiuser or not. emulator-26111
+
+!STACK 0
+org.tizen.sdblib.exception.SdbCommandRejectedException: closed
+	at org.tizen.sdblib.SdbHelper.sendServiceRequest(SdbHelper.java:507)
+	at org.tizen.sdblib.PlatformCapability.loadPlatformCapability(PlatformCapability.java:155)
+	at org.tizen.sdblib.PlatformCapability.<init>(PlatformCapability.java:151)
+	at org.tizen.sdblib.Device.getPlatformCapability(Device.java:823)
+	at org.tizen.common.util.SdbCommandUtil.isMultiUserDevice(SdbCommandUtil.java:95)
+	at org.tizen.common.connection.debugtools.OnDemandInstall.<init>(OnDemandInstall.java:91)
+	at org.tizen.common.connection.explorer.ConnectionExplorerPanel.onConnected(ConnectionExplorerPanel.java:1198)
+	at org.tizen.sdblib.SmartDevelopmentBridge.deviceConnected(SmartDevelopmentBridge.java:553)
+	at org.tizen.sdblib.DeviceMonitor.updateDevices(DeviceMonitor.java:342)
+	at org.tizen.sdblib.DeviceMonitor.processIncomingDeviceData(DeviceMonitor.java:241)
+	at org.tizen.sdblib.DeviceMonitor.process(DeviceMonitor.java:426)
+	at org.tizen.sdblib.daemon.AbstractServer.run(AbstractServer.java:242)
+	at java.lang.Thread.run(Unknown Source)
