@@ -47,7 +47,7 @@ function init()
     infoBackBtn.addEventListener('click', onInfoBackBtnClick);
     //hrmControlBtn.addEventListener('click', onhrmControlBtnClick);
     tizen.power.request("CPU", "CPU_AWAKE");
-    document.querySelector("#chid").addEventListener("click", SeniorID2);
+
     getBatteryState();
     startSensor();
     //tst();
@@ -92,14 +92,6 @@ function SeniorID() {
 		seniorid = prompt("Please Enter Senior ID", "id");
 		localStorage.setItem("seniorid", seniorid);
 	}
-	console.log("sid = "+ seniorid);
-}
-
-function SeniorID2() {
-	
-	seniorid = prompt("Please Enter Senior ID", "id");
-	localStorage.setItem("seniorid", seniorid);
-	
 	console.log("sid = "+ seniorid);
 }
 

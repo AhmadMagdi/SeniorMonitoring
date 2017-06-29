@@ -1,13 +1,13 @@
 /*global tau*/
 /*exported init*/
 
-var seniorid=null; //localStorage.getItem("seniorid");
+var seniorid=localStorage.getItem("seniorid");
 var INFO_SETTIMEOUT_DELAY = 10000;  
 var INFO_SHOW_DELAY = 10000;  
-
+//var getBatteryState;
 //var TEXT_STOP = 'Stop';  
 //var TEXT_START = 'Start';  
-
+var battery = navigator.battery || navigator.webkitBattery || navigator.mozBattery || navigator.msBattery;
 var heartRateEl;  
 //var heartImg;  
 var infoBackBtn;  
@@ -25,6 +25,13 @@ document.getElementsByTagName("body")[0].addEventListener("load",init());
 /*
  * Function invoked on onload event
  */
+
+ function getBatteryState() {
+    var level = Math.floor(battery.level * 100);
+    document.querySelector('#b').textContent = level + '%';
+}
+
+
 function init() 
 {
     console.log("init() called...");
@@ -37,8 +44,10 @@ function init()
     
     //Registering click event handler for buttons.
     infoBackBtn.addEventListener('click', onInfoBackBtnClick);
+    document.querySelector("#chid").addEventListener("click", SeniorID2);
     //hrmControlBtn.addEventListener('click', onhrmControlBtnClick);
     tizen.power.request("CPU", "CPU_AWAKE");
+    getBatteryState();
     startSensor();
     //tst();
 }
@@ -83,7 +92,13 @@ function SeniorID() {
 	}
 	console.log("sid = "+ seniorid);
 }
-
+function SeniorID2() {
+	
+	seniorid = prompt("Please Enter Senior ID", "id");
+	localStorage.setItem("seniorid", seniorid);
+	
+	console.log("sid = "+ seniorid);
+}
 /*
  * Clear the timers if running for handling the information popup.
  */
@@ -311,7 +326,7 @@ function onInfoBackBtnClick() {
              }
          );
      }
-
+     
      //var xVar = setInterval(dataTimer, 300000);
      var xVar = setInterval(dataTimer, 30000);
      //var counter = 0;
@@ -339,10 +354,12 @@ function onInfoBackBtnClick() {
 			"DriverManagerPassword" : "SeniorHealthMonitoringPass"},
 		"package": {
 			"sensorInfo": {
-				"sensorId" : "2433"
+				"sensorId" : "2473"
 			},"sensorData" : {
 				"heartRate" : "100 ",
-				"nSteps" : "20" }
+				"nSteps" : "20",
+				"bLevel" : "50"
+				}
 		}
 	};
         req.package.sensorInfo.sensorId=seniorid;
@@ -350,6 +367,7 @@ function onInfoBackBtnClick() {
         gRate=0;
         cntr=0;
         req.package.sensorData.nSteps=pedometerData.totalStep - tmp;
+        req.package.sensorData.bLevel=Math.floor(battery.level * 100);
        //alert(req.package.sensorData.heartRate);
        //var req ={};
       // req.auth={};
@@ -391,6 +409,10 @@ function onInfoBackBtnClick() {
          pedometer.stop(CONTEXT_TYPE);
      }
 
+     
+     battery.addEventListener('levelchange', getBatteryState);
+     
+          
      /**
       * Initializes the module
       */
